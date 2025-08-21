@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mates - Tienda IWIT ONLINE</title>
+  <style>
+    :root{
+      --verde: #17a673;
+      --gris: #f5f6f7;
+      --texto: #333;
+      --tarjeta: #ffffff;
+    }
+    *{box-sizing: border-box}
+    body{font-family: Arial, Helvetica, sans-serif; margin:0; color:var(--texto); background:var(--gris)}
+    .contenedor{max-width:1100px;margin:0 auto;padding:20px}
+
+    .barra-superior{
+      background:var(--verde); 
+      color:white; 
+      text-align:center; 
+      padding:8px 12px; 
+      font-size:14px
+    }
+
+    header{
+      background:white; 
+      box-shadow:0 1px 4px rgba(0,0,0,.06); 
+      position:sticky; 
+      top:0; 
+      z-index:10
+    }
+    .cabecera-interna{
+      display:flex; 
+      align-items:center; 
+      justify-content:space-between; 
+      gap:16px; 
+      padding:12px 20px
+    }
+    .logo{
+      display:flex; 
+      align-items:center; 
+      gap:10px
+    }
+    .logo img{height:44px}
+    nav a{margin-left:12px; color:#444; text-decoration:none}
+
+    .presentacion{
+      display:flex; 
+      gap:20px; 
+      align-items:center; 
+      background:linear-gradient(90deg,#f8fff9 0%, #ffffff 100%); 
+      padding:30px; 
+      border-radius:8px
+    }
+    .presentacion img{
+      max-width:250px; /* achicada */
+      width:100%; 
+      border-radius:8px
+    }
+
+    .rejilla{
+      display:grid; 
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); 
+      gap:18px; 
+      margin-top:18px
+    }
+    .tarjeta{
+      background:var(--tarjeta); 
+      padding:14px; 
+      border-radius:10px; 
+      box-shadow:0 6px 20px rgba(0,0,0,.04)
+    }
+    .tarjeta img{
+      width:100%; 
+      height:180px; 
+      object-fit:contain
+    }
+    .precio{
+      color:var(--verde); 
+      font-weight:bold; 
+      margin-top:8px
+    }
+    .boton{
+      display:inline-block; 
+      background:var(--verde); 
+      color:white; 
+      border:none; 
+      padding:10px 12px; 
+      border-radius:8px; 
+      cursor:pointer
+    }
+
+    @media (max-width:700px){
+      .presentacion{flex-direction:column}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="barra-superior">🔥 10% de descuento pagando por transferencia</div>
+
+  <header>
+    <div class="contenedor cabecera-interna">
+      <div class="logo">
+        <img src="imagenes\logo.png" alt="logo">
+        <div>
+          <strong>IWIT Mates </strong>
+          <div style="font-size:12px;color:#666">Mates artesanales</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#seccion-Inicio">INICIO</a>
+        <a href="#seccion-productos">Productos</a>
+        <a href="#seccion-contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <div style="flex:1">
+        <h1 style="margin:0 0 8px 0">Mates artesanales premium</h1>
+        <p style="margin:0 0 14px 0;color:#555">
+          Colección seleccionada con materiales de primera calidad. Diseño argentino.
+        </p>
+        <a href="#seccion-productos" class="boton">Ver productos</a>
+      </div>
+      <img src="imagenes/mates principal.jpg" alt="mate" loading="lazy">
+    </section>
+
+    <section id="seccion-productos">
+      <h2 style="margin-top:18px">Productos destacados</h2>
+
+      <div class="rejilla" id="rejilla-productos">
+        <article class="tarjeta" data-nombre="Mate Delfina" data-precio="94920">
+          <img src="imagenes\mate delfina.jpg" alt="Mate Delfina">
+          <h3 style="margin:8px 0 4px 0">Mate Delfina</h3>
+          <div class="precio">$94.920</div>
+          <p style="color:#666;font-size:14px">Mate premium, terminado artesanalmente.</p>
+        </article>
+
+        <article class="tarjeta" data-nombre="Mate Algarrobo" data-precio="115645">
+          <img src="imagenes/mate de algarrobo.jpg" alt="Mate Algarrobo">
+          <h3 style="margin:8px 0 4px 0">Mate Algarrobo</h3>
+          <div class="precio">$115.645</div>
+          <p style="color:#666;font-size:14px">Madera de algarrobo, clásico y elegante.</p>
+        </article>
+
+        <article class="tarjeta" data-nombre="Combo Camionero" data-precio="30953">
+          <img src="https://via.placeholder.com/300x200" alt="Combo Camionero">
+          <h3 style="margin:8px 0 4px 0">Combo Camionero</h3>
+          <div class="precio">$30.953</div>
+          <p style="color:#666;font-size:14px">Combo con mate y bombilla. Oferta.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
