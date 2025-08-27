@@ -139,3 +139,13 @@ background: #17a673;
     justify-content: center;
     align-items: center; 
 }
+
+.cons_nom input,
+.cons_email input,
+.cons_tele input {
+    width: 90%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
