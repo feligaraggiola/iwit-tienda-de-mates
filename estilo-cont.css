@@ -42,3 +42,15 @@ header a:hover {
     gap: 20px;
     flex-wrap: wrap;
 }
+
+.card_correo {
+    background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 150px;
+}
