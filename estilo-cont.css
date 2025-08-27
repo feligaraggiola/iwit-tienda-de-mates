@@ -28,3 +28,17 @@ header a {
 header a:hover {
     text-decoration: underline;
 }
+
+.section_contactos {
+    width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 100px;
+    background: rgba(214,6,6,0.89);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
