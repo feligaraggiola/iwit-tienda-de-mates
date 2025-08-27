@@ -111,9 +111,31 @@ background: #17a673;
 }
 
 .cons_email{
-
+background: #17a673;
+    color: #333;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 900px;
+    height: 80px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
 
 .cons_tele{
-   
+   background: #17a673;
+    color: #333;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 900px;
+    height: 80px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
