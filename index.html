@@ -66,7 +66,6 @@
       margin-top:18px
     }
 
-    
     .tarjeta {
       background:var(--tarjeta); 
       padding:14px; 
@@ -79,18 +78,24 @@
       transform: translateY(-6px);
       box-shadow: 0 12px 24px rgba(0,0,0,0.1);
     }
-   
 
     .tarjeta img{
       width:100%; 
       height:180px; 
       object-fit:contain
     }
+
     .precio{
       color:var(--verde); 
       font-weight:bold; 
-      margin-top:8px
+      margin-left: 8px;
     }
+
+    .precio-original {
+      text-decoration: line-through; 
+      color: #888;
+    }
+
     .boton{
       display:inline-block; 
       background:var(--verde); 
@@ -143,30 +148,40 @@
     <section id="seccion-productos">
       <h2 style="margin-top:18px">Productos destacados</h2>
 
-      <!-- MARCA VISUAL DEL CAMBIO -->
-      <h1 style="color:#17a673; font-size:18px;">🎯 Se aplicó efecto hover a las tarjetas </h1>
+      <h1 style="color:#17a673; font-size:18px;">  </h1>
 
-      <div class="rejilla" id="rejilla-productos"></div>
+      <div class="rejilla" id="rejilla-productos">
+
         <article class="tarjeta" data-nombre="Mate Delfina" data-precio="94920">
           <img src="imagenes/mate delfina.jpg" alt="Mate Delfina">
           <h3 style="margin:8px 0 4px 0">Mate Delfina</h3>
-          <div class="precio">$20.000</div>
+          <div>
+            <span class="precio-original">$20.000</span>
+            <span class="precio">$18.000</span>
+          </div>
           <p style="color:#666;font-size:14px">Mate premium, terminado artesanalmente.</p>
         </article>
 
-         <article class="tarjeta" data-nombre="Mate Algarrobo" data-precio="115645">
+        <article class="tarjeta" data-nombre="Mate Algarrobo" data-precio="115645">
           <img src="imagenes/mate de algarrobo.jpg" alt="Mate Algarrobo">
           <h3 style="margin:8px 0 4px 0">Mate Algarrobo</h3>
-          <div class="precio">$24.000</div>
+          <div>
+            <span class="precio-original">$24.000</span>
+            <span class="precio">$21.600</span>
+          </div>
           <p style="color:#666;font-size:14px">Madera de algarrobo, clásico y elegante.</p>
-         </article>
+        </article>
 
         <article class="tarjeta" data-nombre="Combo Camionero" data-precio="30953">
           <img src="imagenes/combo camionero.jpg" alt="Combo Camionero">
           <h3 style="margin:8px 0 4px 0">Combo Camionero</h3>
-          <div class="precio">$32.000</div>
+          <div>
+            <span class="precio-original">$32.000</span>
+            <span class="precio">$28.800</span>
+          </div>
           <p style="color:#666;font-size:14px">Combo con mate y bombilla. Oferta.</p>
         </article>
+
       </div>
     </section>
   </main>
