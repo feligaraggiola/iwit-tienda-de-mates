@@ -32,7 +32,7 @@ header a:hover {
 .section_contactos {
     width: 80%;
     max-width: 950px;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     padding: 100px;
     background: #17a673;
     border-radius: 25px;
@@ -77,4 +77,82 @@ header a:hover {
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     transition: transform 0.3s, box-shadow 0.3s;
     height: 150px;
+}
+
+.section_consulta{
+width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 100px;
+    background: #17a673;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cons_nom{
+background: #17a673;
+    color: #333;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 900px;
+    height: 80px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.cons_email{
+background: #17a673;
+    color: #333;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 900px;
+    height: 80px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.cons_tele{
+   background: #17a673;
+    color: #333;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 900px;
+    height: 80px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.cons_nom input,
+.cons_email input,
+.cons_tele input {
+    width: 90%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.boton_envio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
