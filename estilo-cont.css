@@ -127,8 +127,9 @@ background: #17a673;
 }
 
 .btn{
-       width: 100%;
+       width: 50%;
     display: flex;
     justify-content: center;
     margin-top: 20px; 
+    margin-left: 25%;
 }
