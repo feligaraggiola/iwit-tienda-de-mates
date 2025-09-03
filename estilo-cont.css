@@ -43,7 +43,35 @@ header a:hover {
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
+.producto_correo {
+    background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 150px;
+}
+
+.producto_whatsapp{
+    background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 150px;
+}
+
+.producto_instagram{
+=======
 .card{
+>>>>>>> 20e94fd44f0039085ae9764f79250867e6f7c89d
     background: white;
     color: #333;
     padding: 25px;
