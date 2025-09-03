@@ -9,15 +9,14 @@ body {
     color: #333;
     line-height: 1.5s;
 }
-
-/* Barra de navegación (FLEX) */
-.menu {
-  background: #17a673;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+.menu{
+    background: #17a673;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
+
 
 .menu a {
   color: #fff;
