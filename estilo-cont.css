@@ -43,7 +43,7 @@ header a:hover {
     flex-wrap: wrap;
 }
 
-.card_correo {
+.producto_correo {
     background: white;
     color: #333;
     padding: 25px;
@@ -55,7 +55,7 @@ header a:hover {
     height: 150px;
 }
 
-.card_whatsapp{
+.producto_whatsapp{
     background: white;
     color: #333;
     padding: 25px;
@@ -67,7 +67,7 @@ header a:hover {
     height: 150px;
 }
 
-.card_instagram{
+.producto_instagram{
     background: white;
     color: #333;
     padding: 25px;
