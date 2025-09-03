@@ -79,6 +79,10 @@ header a:hover {
     height: 150px;
 }
 
+.card{
+
+}
+
 .section_consulta{
 width: 80%;
     max-width: 950px;
@@ -155,4 +159,8 @@ background: #17a673;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.btn{
+    
 }
