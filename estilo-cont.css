@@ -43,6 +43,7 @@ header a:hover {
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 .producto_correo {
     background: white;
     color: #333;
@@ -68,6 +69,9 @@ header a:hover {
 }
 
 .producto_instagram{
+=======
+.card{
+>>>>>>> 20e94fd44f0039085ae9764f79250867e6f7c89d
     background: white;
     color: #333;
     padding: 25px;
@@ -150,9 +154,10 @@ background: #17a673;
     border: 1px solid #ccc;
 }
 
-.boton_envio {
-    width: 100%;
+.btn{
+       width: 50%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20px; 
+    margin-left: 25%;
 }
