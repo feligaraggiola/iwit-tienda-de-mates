@@ -43,44 +43,16 @@ header a:hover {
     flex-wrap: wrap;
 }
 
-.card_correo {
-    background: white;
-    color: #333;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 150px;
-}
-
-.card_whatsapp{
-    background: white;
-    color: #333;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 150px;
-}
-
-.card_instagram{
-    background: white;
-    color: #333;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 150px;
-}
-
 .card{
-
+    background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 150px;
 }
 
 .section_consulta{
@@ -154,13 +126,9 @@ background: #17a673;
     border: 1px solid #ccc;
 }
 
-.boton_envio {
-    width: 100%;
+.btn{
+       width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-
-.btn{
-    
+    margin-top: 20px; 
 }
