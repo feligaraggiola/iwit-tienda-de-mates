@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mates, Bombillas y Yerbas Verdes</title>
-  <link rel="stylesheet" href="styles-productos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda de Mates</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .producto {
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.03);
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .precio {
+      color: #2e7d32;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #388e3c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #2e7d32;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="menu">
-    <a href="index.html"> Inicio</a>
-    <a href="#contacto"> Contacto</a>
-  </nav>
-
-  <!-- HEADER -->
-  <header class="header">
-    <h1>Mates, Bombillas y Yerbas</h1>
-    <p>Los mejores productos para tu mate!</p>
-  </header>
-
-  <!-- MAIN -->
-  <main>
-    <!-- Sección Mates -->
-    <section>
+  <!-- Sección Mates -->
+  <section>
     <h2>Mates</h2>
     <div class="productos">
       <div class="producto">
@@ -33,81 +81,81 @@
         <a class="btn" href="#">Comprar</a>
       </div>
 
-        <div class="producto">
-          <img src="img/D_NQ_NP_701241-MLA75932551087_042024-O.webp" alt="Mate Torpedo" />
-          <h3>Mate Torpedo</h3>
-          <p class="precio">$30.000</p>
-          <a class="btn" href="#">Comprar</a>
-        </div>
-
-        <div class="producto">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_780162-MLA54544452587_032023-O.webp" alt="Mate Imperial" />
-          <h3>Mate Imperial</h3>
-          <p class="precio">$35.200</p>
-           <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20la%20Bombilla%20de%20Alpaca" target="_blank">Comprar</a>
-        </div>
+      <div class="producto">
+        <img src="img/D_NQ_NP_701241-MLA75932551087_042024-O.webp" alt="Mate Torpedo" />
+        <h3>Mate Torpedo</h3>
+        <p class="precio">$30.000</p>
+        <a class="btn" href="#">Comprar</a>
       </div>
-    </section>
 
-    <!-- Sección Bombillas -->
-    <section>
-      <h2>Bombillas</h2>
-      <div class="productos">
-        <div class="productos">
-          <img src="Img/bombillaAlpacaa.jpg" alt="Bombilla de alpaca">
-          <h3>Bombilla de Alpaca</h3>
-          <p class="precio">$15.200</p>
-          <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20la%20Bombilla%20de%20Alpaca" target="_blank">Comprar</a>
-        </div>
-
-        <div class="producto">
-          <img src="img/bombilla.jpg" alt="Bombilla Inoxidable">
-          <h3>Bombilla Inoxidable</h3>
-          <p class="precio">$10.000</p>
-          <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20la%20Bombilla%20Inoxidable" target="_blank">Comprar</a>
-        </div>
-
-        <div class="producto">
-          <img src="Img/bombillaPicoLoro.jpeg" alt="Bombilla Pico de Loro">
-          <h3>Bombilla Pico de Loro</h3>
-          <p class="precio">$12.500</p>
-          <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20la%20Bombilla%20Pico%20de%20Loro" target="_blank">Comprar</a>
-        </div>
+      <div class="producto">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_780162-MLA54544452587_032023-O.webp" alt="Mate Imperial" />
+        <h3>Mate Imperial</h3>
+        <p class="precio">$35.200</p>
+        <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20el%20Mate%20Imperial" target="_blank">Comprar</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Sección Yerbas -->
-    <section>
-      <h2>Yerbas</h2>
-      <div class="productos">
-        <div class="producto">
-          <img src="Img/yerbaCanarias.png" alt="Yerba Canarias">
-          <h3>Yerba Canarias</h3>
-          <p class="precio">$8.700</p>
-          <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20Yerba%20Canarias" target="_blank">Comprar</a>
-        </div>
-
-        <div class="producto">
-          <img src="Img/yerbabaldo.jpg" alt="Yerba Baldo">
-          <h3>Yerba Baldo</h3>
-          <p class="precio">$6.000</p>
-          <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20Yerba%20Pipore" target="_blank">Comprar</a>
-        </div>
-
-        <div class="producto">
-          <img src="img/images.jpeg" alt="Yerba Playadito">
-          <h3>Yerba Playadito</h3>
-          <p class="precio">$9.000</p>
-          <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20Yerba%20Playadito" target="_blank">Comprar</a>
-        </div>
+  <!-- Sección Bombillas -->
+  <section>
+    <h2>Bombillas</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="Img/bombillaAlpacaa.jpg" alt="Bombilla de Alpaca">
+        <h3>Bombilla de Alpaca</h3>
+        <p class="precio">$15.200</p>
+        <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20la%20Bombilla%20de%20Alpaca" target="_blank">Comprar</a>
       </div>
-    </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer id="contacto" class="footer">
-    <p>&copy; 2025 Mates Verdes | <a href="https://wa.me/5492995189053" target="_blank">WhatsApp</a></p>
-  </footer>
+      <div class="producto">
+        <img src="img/bombilla.jpg" alt="Bombilla Inoxidable">
+        <h3>Bombilla Inoxidable</h3>
+        <p class="precio">$10.000</p>
+        <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20la%20Bombilla%20Inoxidable" target="_blank">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <img src="Img/bombillaPicoLoro.jpeg" alt="Bombilla Pico de Loro">
+        <h3>Bombilla Pico de Loro</h3>
+        <p class="precio">$12.500</p>
+        <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20la%20Bombilla%20Pico%20de%20Loro" target="_blank">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Yerbas -->
+  <section>
+    <h2>Yerbas</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="Img/yerbaCanarias.png" alt="Yerba Canarias">
+        <h3>Yerba Canarias</h3>
+        <p class="precio">$8.700</p>
+        <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20Yerba%20Canarias" target="_blank">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <img src="Img/yerbabaldo.jpg" alt="Yerba Baldo">
+        <h3>Yerba Baldo</h3>
+        <p class="precio">$6.000</p>
+        <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20Yerba%20Baldo" target="_blank">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <img src="img/images.jpeg" alt="Yerba Playadito">
+        <h3>Yerba Playadito</h3>
+        <p class="precio">$9.000</p>
+        <a class="btn" href="https://wa.me/5492995189053?text=Quiero%20comprar%20Yerba%20Playadito" target="_blank">Comprar</a>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
+
+
+
+
+
+
