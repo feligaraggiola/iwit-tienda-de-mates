@@ -111,9 +111,8 @@ h2 {
   font-weight: bold;
   transition: 0.3s;
 }
-
 .btn:hover {
-  background: #138f5b;
+  background-color: #138f5b;
 }
 
 /* Footer (FLEX) */
