@@ -101,8 +101,8 @@ h2 {
 }
 
 /* Botón */
-.btn {
-  display: inline-block;
+.btn{
+    display: inline-block;
   background: #17a673;
   color: white;
   text-decoration: none;
