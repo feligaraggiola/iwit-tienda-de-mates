@@ -44,7 +44,7 @@ header a:hover {
 .section_contactos {
     width: 80%;
     max-width: 950px;
-    margin: 0 auto 60px auto;
+    margin: 40px auto 60px auto;
     padding: 100px;
     background: #17a673;
     border-radius: 25px;
@@ -54,6 +54,7 @@ header a:hover {
     gap: 20px;
     flex-wrap: wrap;
 }
+
 
 .card{
     background: white;
