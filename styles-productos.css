@@ -9,6 +9,12 @@ body {
     color: #333;
     line-height: 1.5s;
 }
+.nav {
+  box-sizing: border-box;
+  justify-content: center;
+  color: #17a673;
+}
+
 .menu{
     background: #17a673;
     padding: 1rem 2rem;
