@@ -9,18 +9,29 @@ body {
 
 header {
     display: flex;
+    align-items: center;
     background-color: #17a673;
-    padding: 15px 0;
+    padding: 15px 30px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-     align-items: center;
+    box-sizing: border-box;
+}
+
+.logo_img {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
 }
 
 header a {  
-    color: white; 
-    margin: 0 15px;
+    color: white;
+    margin: 0;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
