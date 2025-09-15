@@ -1,9 +1,21 @@
+<<<<<<< HEAD
 :root {
   --verde: #17a673;
   --gris: #f5f6f7;
   --texto: #333;
   --card: #ffffff;
 }
+=======
+:root{
+      --verde: #17a673;
+      --gris: #f5f6f7;
+      --texto: #333;
+      --tarjeta: #ffffff;
+    }
+    *{box-sizing: border-box}
+    body{font-family: Arial, Helvetica, sans-serif; margin:0; color:var(--texto); background:var(--gris)}
+    .contenedor{max-width:1100px;margin:0 auto;padding:20px}
+>>>>>>> 6e6633e2c0005d6cb4c5ae12dad88f87ec24170f
 
 * {
   box-sizing: border-box;
@@ -139,6 +151,7 @@ nav a:hover {
   box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
+<<<<<<< HEAD
 .card img {
   width: 100%;
   height: 180px;
@@ -159,6 +172,33 @@ nav a:hover {
   font-weight: bold;
   margin-left: 8px;
 }
+=======
+    .rejilla{
+      display:grid; 
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); 
+      gap:18px; 
+      margin-top:18px
+    }
+
+    .tarjeta {
+      background:var(--tarjeta); 
+      padding:14px; 
+      border-radius:10px; 
+      box-shadow:0 6px 20px rgba(0,0,0,.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+
+    .tarjeta img{
+      width:100%; 
+      height:180px; 
+      object-fit:contain
+    }
+>>>>>>> 6e6633e2c0005d6cb4c5ae12dad88f87ec24170f
 
 .precio-original {
   text-decoration: line-through;
@@ -172,11 +212,23 @@ nav a:hover {
   text-align: center;
 }
 
+<<<<<<< HEAD
 #testimonios h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #0b3d2e;
 }
+=======
+    .boton{
+      display:inline-block; 
+      background:var(--verde); 
+      color:white; 
+      border:none; 
+      padding:10px 12px; 
+      border-radius:8px; 
+      cursor:pointer
+    }
+>>>>>>> 6e6633e2c0005d6cb4c5ae12dad88f87ec24170f
 
 .testimonios-contenedor {
   display: flex;
