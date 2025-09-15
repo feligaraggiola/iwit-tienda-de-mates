@@ -10,7 +10,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #17a673;
+    background-color: #0b3d2e;
     padding: 15px 30px;
     width: 100%;
     position: fixed;
@@ -46,7 +46,7 @@ header a:hover {
     max-width: 950px;
     margin: 40px auto 60px auto;
     padding: 100px;
-    background: #17a673;
+    background: #0b3d2e;
     border-radius: 25px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     display: flex;
@@ -73,7 +73,7 @@ width: 80%;
     max-width: 950px;
     margin: 0 auto;
     padding: 100px;
-    background: #17a673;
+    background: #0b3d2e;
     border-radius: 25px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     display: flex;
@@ -85,7 +85,7 @@ width: 80%;
 }
 
 .cons{
-    background: #17a673;
+    background: #0b3d2e;
     color: #333;
     padding: 10px;
     border-radius: 15px;
@@ -116,7 +116,7 @@ width: 80%;
 }
 
 .footer{
-    background-color: #17a673;
+    background-color: #0b3d2e;
     text-align: center;
     width: 100%;
     height: 100px;
