@@ -30,7 +30,6 @@ body {
     transition: color 0.3s;
 }
 
-
 .menu a:hover{
   color: #c8e6c9;
 }
@@ -57,13 +56,14 @@ main {
   max-width: 1200px;
   margin: auto;
 }
-h2 {
+h2 mates {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #17a673;
   border-bottom: 2px solid #66bb6a;
   display: inline-block;
   padding-bottom: 0.3rem;
+  justify-content: center;
 }
 
 /* Grid de productos */
