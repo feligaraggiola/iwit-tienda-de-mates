@@ -154,7 +154,7 @@ h2 mates {
 }
 
 .animar {
-clase widi; 
+  animation: flotar 3s ease-in-out infinite;
 }
 
 .mostrar {
