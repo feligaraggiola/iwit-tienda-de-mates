@@ -86,6 +86,7 @@ h2 {
   animation: fadeInUp 0.8s forwards;
   animation-delay: var(--delay, 0s);
 }
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
