@@ -68,6 +68,11 @@ header a:hover {
     height: 150px;
 }
 
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
 .section_consulta{
     width: 80%;
     max-width: 950px;
