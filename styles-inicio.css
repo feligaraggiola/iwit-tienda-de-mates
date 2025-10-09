@@ -259,6 +259,11 @@ button:hover, .btn:hover, img:hover {
   animation: mover 2s infinite alternate;
 }
 
+/*muevo 5 pixeles para animar*/
+@keyframes mover {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
 
 /* Responsive */
 @media (max-width: 700px) {
