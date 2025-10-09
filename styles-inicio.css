@@ -247,7 +247,7 @@ footer h3 {
   color: var(--verde);
 }
 
-/* 1. Hover sobre botones e imágenes */
+/* 1. Hover en los  botones y las imágenes */
 button:hover, .btn:hover, img:hover {
   transform: scale(1.05);          
   opacity: 0.9;                    
