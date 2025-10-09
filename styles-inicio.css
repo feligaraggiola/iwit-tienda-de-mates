@@ -254,7 +254,7 @@ button:hover, .btn:hover, img:hover {
   transition: all 0.3s ease;      
 }
 
-
+/*animaciones en el codigo*/
 .animar {
   animation: mover 2s infinite alternate;
 }
