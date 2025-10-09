@@ -255,6 +255,10 @@ button:hover, .btn:hover, img:hover {
 }
 
 
+.animar {
+  animation: mover 2s infinite alternate;
+}
+
 
 /* Responsive */
 @media (max-width: 700px) {
