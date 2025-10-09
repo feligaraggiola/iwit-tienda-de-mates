@@ -265,7 +265,7 @@ button:hover, .btn:hover, img:hover {
   to { transform: translateY(-5px); }
 }
 
-/* aparece con suavidad */
+/* las cosas aparecen con suavidad */
 .mostrar {
   opacity: 0;
   transform: translateY(20px);
