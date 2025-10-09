@@ -120,6 +120,12 @@ header a:hover {
     margin-left: 25%;
 }
 
+.btn:hover {
+    background-color: #1e8c63;
+    color: white;
+    transform: scale(1.05);
+}
+
 .footer{
     background-color: #0b3d2e;
     text-align: center;
