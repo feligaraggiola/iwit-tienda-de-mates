@@ -280,6 +280,16 @@ button:hover, .btn:hover, img:hover {
 }
 
 
+/*   brillo para resaltar objetos */
+.resaltar {
+  animation: brillo 3s infinite;
+}
+
+@keyframes brillo {
+  0%, 100% { box-shadow: none; }
+  50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); }
+}
+
 
 
 /* Responsive */
