@@ -79,6 +79,13 @@ h2 {
   50% { transform: translateY(-8px); }
 }
 
+/* FadeIn productos */
+.mostrar {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: var(--delay, 0s);
+}
 
 @keyframes fadeInUp {
   to {
