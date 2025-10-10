@@ -5,11 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mates - Tienda IWIT ONLINE</title>
-  
-  <!-- ================== HEADER ================== -->
 </head>
 <body>
-  <div class="barra-superior"> 10% de descuento pagando en efectivo </div>
+  <div class="barra-superior">10% de descuento pagando en efectivo</div>
 
   <header>
     <div class="contenedor cabecera-interna">
@@ -20,7 +18,6 @@
           <div style="font-size:12px;color:#666">Mates artesanales</div>
         </div>
       </div>
-<!-- ================== LINKS ================== -->
       <nav>
         <a href="index.html">Inicio</a>
         <a href="productos.html">Productos</a>
@@ -28,25 +25,35 @@
       </nav>  
     </div>
   </header>
-<!-- ================== PRINCIPAL ================== -->
+
   <main class="contenedor">
+
+    <!-- ================== PRESENTACIÓN ================== -->
     <section class="presentacion">
       <div style="flex:1">
-        <h1 style="margin:0 0 8px 0">Mates artesanales premium y unicos</h1>
+        <h1 style="margin:0 0 8px 0">Mates artesanales premium y únicos</h1>
         <p style="margin:0 0 14px 0;color:#555">
-          Colección seleccionada con materiales de primera calidad. Diseño argentino.
+          Colección seleccionada con materiales de primera calidad e Importados. Echos en nuestro Taller
         </p>
-        <a href="#seccion-productos" class="btn">Ver productos</a>
+
+        <!-- APLICADA LA CLASE "btn animar" -->
+
+        <a href="#seccion-productos" class="btn animaa">ver productos</a>
       </div>
-      <img src="imagenes/mate criollo.jpg" alt="mate" loading="lazy">
+
+      <!-- APLICADA LA CLASE "resaltar" -->
+
+      <img src="imagenes/mate criollo.jpg" alt="mate" class="resaltar" loading="lazy">
     </section>
-<!-- ================== DESTACADOS ================== -->
+
+    <!-- ================== DESTACADOS ================== -->
     <section id="seccion-productos">
       <h2 style="margin-top:18px">Productos destacados</h2>
 
       <div class="grid-container" id="grid-container-productos">
 
-        <article class="card" data-nombre="Mate Delfina" data-precio="94920">
+        <!-- APLICADA LA CLASE "mostrar" AL CARD -->
+        <article class="card mostrar" data-nombre="Mate Delfina" data-precio="94920">
           <img src="imagenes/mate delfina.jpg" alt="Mate Delfina">
           <h3 style="margin:8px 0 4px 0">Mate Delfina</h3>
           <div>
@@ -54,7 +61,6 @@
             <span class="precio">$18.000</span>
           </div>
           <p style="color:#666;font-size:14px">Mate premium, terminado artesanalmente.</p>
-     
         </article>
 
         <article class="card" data-nombre="Mate Algarrobo" data-precio="115645">
@@ -77,46 +83,56 @@
           <p style="color:#666;font-size:14px">Combo con mate y bombilla. Oferta.</p>
         </article>
 
+
+        <article class="card" data-nombre="Mate Algarrobo" data-precio="115645">
+          <img src="imagenes/mate de boca.jpg" alt="Mate Algarrobo">
+          <h3 style="margin:8px 0 4px 0">Mate De Boca </h3>
+          <div>
+            <span class="precio">$54.190.5</span>
+          </div>
+          <p style="color:#666;font-size:14px">Contiene un revestimiento de cuero que hace que no se enfrie, es un mate Grande y el favorito elegido.</p>
+        </article>
+
+
       </div>
     </section>
 
-   <!-- ================== TESTIMONIOS ================== -->
-<section id="testimonios" style="padding: 60px 20px; background: #f9f9f9; text-align: center;">
-  <h2 style="font-size: 2rem; margin-bottom: 30px; color: #0b3d2e;">Lo que dicen nuestros clientes</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <!-- ================== TESTIMONIOS ================== -->
+    <section id="testimonios" style="padding: 60px 20px; background: #f9f9f9; text-align: center;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; color: #0b3d2e;">Lo que dicen nuestros clientes</h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
-    <div style="background: white; padding: 20px; max-width: 300px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
-      <img src="imagenes/juan perez.jpg" alt="Cliente 1" style="border-radius: 50%; width: 80px; height: 80px; margin-bottom: 15px;">
-      <p>"El mate que compré tiene una calidad excelente, además la atención fue muy rápida y amable. ¡Recomendados 100%!"</p>
-      <h4 style="margin-top: 15px; color: #0b3d2e;">– Juan Pérez</h4>
-    </div>
+        <div style="background: white; padding: 20px; max-width: 300px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+          <img src="imagenes/juan perez.jpg" alt="Cliente 1" style="border-radius: 50%; width: 80px; height: 80px; margin-bottom: 15px;">
+          <p>"El mate que compré tiene una calidad excelente, además la atención fue muy rápida y amable. ¡Recomendados 100%!"</p>
+          <h4 style="margin-top: 15px; color: #0b3d2e;">– Juan Pérez</h4>
+        </div>
 
-    <div style="background: white; padding: 20px; max-width: 300px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
-      <img src="imagenes/maria gonzalez.jpg" alt="Cliente 2" style="border-radius: 50%; width: 80px; height: 80px; margin-bottom: 15px;">
-      <p>"Hermosos diseños y muy resistentes. Me encantó el packaging, perfecto para regalar."</p>
-      <h4 style="margin-top: 15px; color: #0b3d2e;">– María González</h4>
-    </div>
+        <div style="background: white; padding: 20px; max-width: 300px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+          <img src="imagenes/maria gonzalez.jpg" alt="Cliente 2" style="border-radius: 50%; width: 80px; height: 80px; margin-bottom: 15px;">
+          <p>"Hermosos diseños y muy resistentes. Me encantó el packaging, perfecto para regalar."</p>
+          <h4 style="margin-top: 15px; color: #0b3d2e;">– María González</h4>
+        </div>
 
-    <div style="background: white; padding: 20px; max-width: 300px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
-      <img src="imagenes/pedro garaggiola.jpg" alt="Cliente 3" style="border-radius: 50%; width: 80px; height: 80px; margin-bottom: 15px;">
-      <p>"La mejor tienda de mates que probé, excelente relación precio/calidad."</p>
-      <h4 style="margin-top: 15px; color: #0b3d2e;">– Pedro Garaggiola</h4>
-    </div>
+        <div style="background: white; padding: 20px; max-width: 300px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+          <img src="imagenes/pedro garaggiola.jpg" alt="Cliente 3" style="border-radius: 50%; width: 80px; height: 80px; margin-bottom: 15px;">
+          <p>"La mejor tienda de mates que probé, excelente relación precio/calidad."</p>
+          <h4 style="margin-top: 15px; color: #0b3d2e;">– Pedro Garaggiola</h4>
+        </div>
 
-  </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- ================== FOOTER ================== -->
-<footer style="background: #0b3d2e; color: white; padding: 40px 20px; text-align: center; margin-top: 40px;">
-  <h3 style="margin-bottom: 10px;">Iwit - Tienda de Mates</h3>
-  <p>© 2025 Todos los derechos reservados,Nombre completamente original</p>
-  <div style="margin-top: 15px;">
-    <a href="#" style="margin: 0 10px; color: white; text-decoration: none;">Instagram</a>
-    <a href="#" style="margin: 0 10px; color: white; text-decoration: none;">Facebook</a>
-    <a href="#" style="margin: 0 10px; color: white; text-decoration: none;">WhatsApp</a>
-  </div>
-</footer>
+    <!-- ================== FOOTER ================== -->
+    <footer style="background: #0b3d2e; color: white; padding: 40px 20px; text-align: center; margin-top: 40px;">
+      <h3 style="margin-bottom: 10px;">Iwit - Tienda de Mates</h3>
+      <p>© 2025 Todos los derechos reservados, Nombre completamente original</p>
+      <div style="margin-top: 15px;">
+        <a href="#" style="margin: 0 10px; color: white; text-decoration: none;">Instagram</a>
+        <a href="#" style="margin: 0 10px; color: white; text-decoration: none;">Facebook</a>
+        <a href="#" style="margin: 0 10px; color: white; text-decoration: none;">WhatsApp</a>
+      </div>
+    </footer>
 
   </main>
 </body>
