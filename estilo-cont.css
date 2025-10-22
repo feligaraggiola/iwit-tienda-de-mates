@@ -73,43 +73,59 @@ header a:hover {
     box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
 
-.section_consulta{
-    width: 80%;
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 100px;
-    background: #0b3d2e;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.section_consulta {
+  width: 80%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 80px;
+  background: #0b3d2e;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: white;
 }
 
-.cons{
-    background: #0b3d2e;
-    color: #333;
-    padding: 10px;
-    border-radius: 15px;
-    text-align: center;
-    width: 900px;
-    height: 80px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+.section_consulta h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
 }
 
-.cons input{
-    width: 90%;
-    padding: 5px 10px;
-    margin-top: 5px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+.cons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cons label {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.cons input,
+.cons textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+}
+
+.cons input:focus,
+.cons textarea:focus {
+  outline: none;
+  border-color: #1e8c63;
+  box-shadow: 0 0 5px rgba(30, 140, 99, 0.4);
+}
+
+.cons textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 .btn{
