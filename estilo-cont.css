@@ -75,9 +75,9 @@ header a:hover {
 
 .section_consulta {
   width: 80%;
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 50px 80px;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 40px;
   background: #0b3d2e;
   border-radius: 25px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
@@ -90,66 +90,56 @@ header a:hover {
 .section_consulta h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: white;
+  font-size: 28px;
 }
 
-.cons {
+.grupo_input {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  width: 100%;
 }
 
-.cons label {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.cons input,
-.cons textarea {
-  width: 100%;
+.input.cons {
   padding: 12px;
-  border: 1px solid #ccc;
   border-radius: 8px;
+  border: 1px solid #ccc;
   font-size: 16px;
-  color: #333;
+  width: 100%;
+  box-sizing: border-box;
   background-color: white;
+  color: #333;
 }
 
-.cons input:focus,
-.cons textarea:focus {
+.input.cons:focus {
   outline: none;
   border-color: #1e8c63;
   box-shadow: 0 0 5px rgba(30, 140, 99, 0.4);
 }
 
-.cons textarea {
+textarea.input.cons {
   resize: vertical;
   min-height: 120px;
 }
 
-
-.btn_envio {
-  display: flex;
-  justify-content: center;
-}
-
 .btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 30px;
   background-color: #1e8c63;
   color: white;
   border: none;
-  padding: 12px 30px; 
-  font-size: 16px;
   border-radius: 10px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-width: 200px;
 }
 
 .btn:hover {
   background-color: #155f45;
   transform: scale(1.05);
 }
-
+s
 
 .footer{
     background-color: #0b3d2e;
