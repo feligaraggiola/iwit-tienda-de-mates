@@ -128,19 +128,28 @@ header a:hover {
   min-height: 120px;
 }
 
-.btn{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; 
-    margin-left: 25%;
+
+.btn_envio {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #1e8c63;
+  color: white;
+  border: none;
+  padding: 12px 30px; 
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #1e8c63;
-    color: white;
-    transform: scale(1.05);
+  background-color: #155f45;
+  transform: scale(1.05);
 }
+
 
 .footer{
     background-color: #0b3d2e;
