@@ -100,5 +100,5 @@ h2 {
 }
 .resaltar:hover {
   box-shadow: 0 0 12px rgba(23, 166, 115, 0.7);
-  transform: scale(1.05);
+  transform: scale(1.05);
 }
