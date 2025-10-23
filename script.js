@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     modalContenido.style.textAlign = "center";
     modalContenido.style.boxShadow = "0 0 20px rgba(0,0,0,0.3)";
     modalContenido.innerHTML = `
-      <h3>👋 Hola!</h3>
-      <p>Este es un mensaje escrito por el Papi del proyecto ;)</p>
+      <h3>👋 Hola! Este es un mensaje escrito por el Crack del proyecto ;)</h3>
+      
       <button class="btn">Cerrar</button>
     `;
   
