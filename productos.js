@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         display: "none",
         justifyContent: "center",
         alignItems: "center",
+        background: "rgba(0,0,0,0.5)",
         
     }
 })
