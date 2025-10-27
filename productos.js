@@ -13,12 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.createElement("div");
     modal.classList.add("mostrar");
     Object.assign(modal.style), {
-        position: "fixed",
+        position: "fixed"
         top: "0",
         left: "0",
         width: "100%", 
         height: "100%",
         display: "none",
+        justifyContent: "center",
         
     }
 })
