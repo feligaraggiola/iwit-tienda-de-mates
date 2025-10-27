@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const modal = document.createElement("div");
     modal.classList.add("mostrar");
-    Object.assign(modal.style), {
+    Object.assign(modal.style, {
         position: "fixed"
         top: "0",
         left: "0",
@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
         justifyContent: "center",
         alignItems: "center",
         background: "rgba(0,0,0,0.5)",
-        
-    }
+        zIndex: "1000px";
+    })
 })
