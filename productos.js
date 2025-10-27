@@ -11,5 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     seccionTestimonios.parentNode.insertBefore(botonModal, seccionTestimonios);
     
     const modal = document.createElement("div");
-    
+    modal.classList.add("mostrar");
+    Object.assign(modal.style), {
+        
+    }
 })
