@@ -24,4 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         background: "rgba(0,0,0,0.5)",
         zIndex: "1000px";
     })
+
+    const modalContenido = document.createElement("div");
+    
 })
