@@ -4,5 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     botonModal.classlist.add("btn", "animar");
     botonModal.style.display = "block";
     botonModal.style.margin =   "40px auto"; 
-    
+    botonModal.style.fontSize = "18px";
+        
 })
