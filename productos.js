@@ -8,5 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     botonModal.style.padding = "12px 20px";
     
     const seccionTestimonios = document.getElementById("testimonios");
-      
+    seccionTestimonios.parentNode.insertBefore(botonModal, seccionTestimonios);
+    
+    
 })
