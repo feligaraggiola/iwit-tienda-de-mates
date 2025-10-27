@@ -1,27 +1,47 @@
-// Espera a que el documento cargue completamente
+// Esperar que el DOM cargue completamente
 document.addEventListener("DOMContentLoaded", () => {
-  // Obtenemos los elementos del HTML
-  const boton = document.getElementById("boton-modal");
-  const modal = document.getElementById("modal");
-  const cerrar = document.getElementById("cerrar-modal");
 
-  // Verificamos que existan (por si el script se usa en varias páginas)
-  if (boton && modal && cerrar) {
-
-    // 👉 Evento de click izquierdo
-    boton.addEventListener("click", () => {
-      modal.classList.remove("oculto"); // muestra el modal
+    // === Crear el botón reutilizando clases existentes ===
+    const botonModal = document.createElement("button");
+    botonModal.textContent = "Mostrar mensaje";
+    botonModal.classList.add("btn", "animar"); // Usa clases del TP
+    botonModal.style.display = "block";
+    botonModal.style.margin = "40px auto";
+    botonModal.style.fontSize = "18px";
+    botonModal.style.padding = "12px 20px";
+  
+    // Insertar el botón justo antes de la sección de testimonios
+    const seccionTestimonios = document.getElementById("testimonios");
+    seccionTestimonios.parentNode.insertBefore(botonModal, seccionTestimonios);
+  
+    // === Crear el modal (oculto al inicio) ===
+    const modal = document.createElement("div");
+    modal.classList.add("mostrar"); // animación de aparición
+    Object.assign(modal.style, {
+      position: "fixed",
+      top: "0",
+      left: "0",
+      width: "100%",
+      height: "100%",
+      display: "none",
+      justifyContent: "center",
+      alignItems: "center",
+      background: "rgba(0,0,0,0.5)",
+      zIndex: "1000"
     });
+  
+    // === Contenido del modal ===
+    const modalContenido = document.createElement("div");
+    modalContenido.style.background = "white";
+    modalContenido.style.padding = "30px";
+    modalContenido.style.borderRadius = "10px";
+    modalContenido.style.textAlign = "center";
+    modalContenido.style.boxShadow = "0 0 20px rgba(0,0,0,0.3)";
+    modalContenido.innerHTML = `
+      <h3>👋 Hola! Este es un mensaje escrito por el Crack del proyecto ;)</h3>
+      
+      <button class="btn">Cerrar</button>
+    `;
 
-    // 👉 Evento de click derecho (contextmenu)
-    boton.addEventListener("contextmenu", (e) => {
-      e.preventDefault(); // evita que se abra el menú del clic derecho
-      modal.classList.remove("oculto"); // muestra el modal
-    });
-
-    // 👉 Cerrar el modal
-    cerrar.addEventListener("click", () => {
-      modal.classList.add("oculto"); // oculta el modal
-    });
-  }
-});
+ 
+})
