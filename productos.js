@@ -10,5 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const seccionTestimonios = document.getElementById("testimonios");
     seccionTestimonios.parentNode.insertBefore(botonModal, seccionTestimonios);
     
+    const modal = document.createElement("div");
     
 })
