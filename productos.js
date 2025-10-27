@@ -43,5 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <button class="btn">Cerrar</button>
     `;
 
- 
+ modal.appendChild(modalContenido);
+ document.body.appendChild(modal);
 })
