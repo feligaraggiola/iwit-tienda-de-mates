@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         height: "100%",
         display: "none",
         justifyContent: "center",
+        alignItems: "center",
         
     }
 })
