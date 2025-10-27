@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.add("mostrar");
     Object.assign(modal.style), {
         position: "fixed",
+        top: "0",
         
     }
 })
