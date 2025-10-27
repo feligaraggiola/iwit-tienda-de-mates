@@ -3,4 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     botonModal.textContent = "Mostrarme el mensaje";
     botonModal.classlist.add("btn", "animar");
     botonModal.style.display = "block";
+    botonModal.style.margin =   "40px auto"; 
+    
 })
