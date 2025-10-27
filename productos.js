@@ -5,5 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     botonModal.style.display = "block";
     botonModal.style.margin =   "40px auto"; 
     botonModal.style.fontSize = "18px";
-        
+    botonModal.style.padding = "12px 20px";
+    
+    const seccionTestimonios = document.getElementById("testimonios");
+      
 })
