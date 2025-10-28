@@ -31,5 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
     modalContenido.style.borderRadius ="10px";
     modalContenido.style.textAlign = "center";
     modalContenido.style.boxShadow = "0 0 20px rgba(0,0,0,0.3)";
+    modalContenido.innerHTML= '
+        <h3> Hola te dejo un mensaje asi laburas </h3>
+
+        <buttom class="btn">Cerrar</buttom>
+    ';
+
     
 })
