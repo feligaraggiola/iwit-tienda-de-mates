@@ -48,6 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
  // === Funcion para mostrar el modal segun clic ===
  function mostrarModal(tipoEvento) {
-  
+  modal.style.display = "flex";
+  modalContenido.querySelector("p").textContent =
+  tipoEvento === "click"
+  ? "Hiciste clic izquierdo en el boton"
  }
 })
