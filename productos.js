@@ -29,5 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     modalContenido.style.background = "black";
     modalContenido.style.padding ="30px";
     modalContenido.style.borderRadius ="10px";
+    modalContenido.style.textAlign = "center";
     
 })
