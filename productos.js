@@ -28,5 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalContenido = document.createElement("div");
     modalContenido.style.background = "black";
     modalContenido.style.padding ="30px";
+    modalContenido.style.borderRadius ="10px";
     
 })
