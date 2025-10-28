@@ -48,5 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
  // === Funcion para mostrar el modal segun clic ===
  function mostrarModal(tipoEvento) {
+  
  }
 })
