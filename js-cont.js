@@ -76,10 +76,15 @@
         return;
       }
 
-      showModal('✅ Tu consulta fue enviada con éxito.');
+      showModal('Tu consulta fue enviada con éxito.');
 
       const inputs = form.querySelectorAll('.input');
       inputs.forEach(input => input.value = '');
     });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();
