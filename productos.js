@@ -115,4 +115,7 @@ botonModal.addEventListener("click", (e) => {
     // === Efecto de resaltado en las tarjetas ===
  const cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
-})
+      card.addEventListener("mouseenter", () => card.classList.add("resaltar"));
+      card.addEventListener("mouseleave", () => card.classList.remove("resaltar"));
+    });
+  });
