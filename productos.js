@@ -112,4 +112,6 @@ botonModal.addEventListener("click", (e) => {
       mostrarModal("click");
     });
 
+    // === Efecto de resaltado en las tarjetas ===
+
 })
