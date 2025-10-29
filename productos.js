@@ -107,6 +107,9 @@ function mostrarModal(tipoEvento){
     }
 
         // === Eventos del botón ===
-
+botonModal.addEventListener("click", (e) => {
+      e.preventDefault();
+      mostrarModal("click");
+    });
 
 })
