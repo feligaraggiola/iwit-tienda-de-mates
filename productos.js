@@ -97,5 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
 modal.appendChild(modalContenido);
 document.body.appendChild(modal);
 
+// === Funcion para mostrar el modal segun el clic ===
+
+
 
 })
