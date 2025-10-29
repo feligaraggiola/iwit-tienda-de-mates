@@ -106,5 +106,7 @@ function mostrarModal(tipoEvento){
           : "Hiciste clic derecho en el botón 👀";
     }
 
+        // === Eventos del botón ===
+
 
 })
