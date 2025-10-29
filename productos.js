@@ -100,6 +100,11 @@ document.body.appendChild(modal);
 // === Funcion para mostrar el modal segun el clic ===
 function mostrarModal(tipoEvento){
   modal.style.display = "flex";
+  modalContenido.querySelector("p").textContent =
+        tipoEvento === "click"
+          ? "Hiciste clic izquierdo en el botón 👍"
+          : "Hiciste clic derecho en el botón 👀";
+    }
 
 
 })
