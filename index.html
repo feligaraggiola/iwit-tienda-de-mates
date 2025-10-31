@@ -329,10 +329,9 @@
     </footer>
   </main>
 
-  <!-- 💡 PUNTO 5 - MODAL DEL CARRITO -->
   <div class="modal" id="modal-carrito">
     <div class="modal-contenido">
-      <h3>🛍️ Tu carrito</h3>
+      <h3>Carrito</h3>
       <ul id="lista-carrito"></ul>
       <button class="cerrar-modal" id="cerrar-carrito">Cerrar</button>
     </div>
@@ -347,7 +346,7 @@
     const abrirCarrito = document.getElementById('abrir-carrito');
     const cerrarCarrito = document.getElementById('cerrar-carrito');
 
-    // 💡 PUNTO 5 - Manejo de carrito
+   
     botones.forEach(boton => {
       boton.addEventListener('click', () => {
         const producto = boton.parentElement.dataset.nombre;
@@ -377,7 +376,7 @@
       modal.style.display = 'none';
     });
 
-    // 💡 PUNTO 6 - Animación de aparición
+    
     const cards = document.querySelectorAll('.card');
     window.addEventListener('scroll', () => {
       cards.forEach(card => {
