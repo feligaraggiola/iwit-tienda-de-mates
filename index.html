@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mates - Tienda IWIT ONLINE</title>
 
-  <!-- ================== ESTILOS (AQUÍ SE APLICÓ EL PUNTO 3) ================== -->
   <style>
     /* 💡 Estilos base */
     body {
@@ -24,10 +23,14 @@
       font-weight: bold;
     }
 
+    /* 💡 PUNTO 2 APLICADO AQUÍ */
     header {
-      background: white;
+      background: linear-gradient(90deg, #ffffff 0%, #f7f3ee 100%); /* degradado sutil */
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       padding: 10px 20px;
+      position: sticky; /* header fijo al hacer scroll */
+      top: 0;
+      z-index: 10;
     }
 
     .contenedor {
@@ -94,7 +97,7 @@
       background: #b48a55;
     }
 
-    /* ⚡️ PUNTO 3: MEJOR PRESENTACIÓN DE PRODUCTOS ⚡️ */
+    /* ⚡️ Estilo de productos */
     .grid-container {
       display: grid;
       gap: 20px;
@@ -102,7 +105,6 @@
       margin-top: 20px;
     }
 
-    /* 🔹 AGREGADO: diseño de las tarjetas de producto */
     .card {
       background: white;
       border-radius: 12px;
@@ -112,7 +114,6 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* 🔹 AGREGADO: efecto hover */
     .card:hover {
       transform: translateY(-6px);
       box-shadow: 0 6px 14px rgba(0,0,0,0.15);
@@ -124,7 +125,6 @@
       height: auto;
     }
 
-    /* 🔹 AGREGADO: botón “Agregar al carrito” */
     .btn-agregar {
       background: #0b3d2e;
       color: white;
@@ -206,7 +206,6 @@
 
       <div class="grid-container" id="grid-container-productos">
 
-      
         <article class="card mostrar" data-nombre="Mate Delfina" data-precio="94920">
           <img src="imagenes/mate delfina.jpg" alt="Mate Delfina">
           <h3>Mate Delfina</h3>
@@ -215,7 +214,6 @@
             <span class="precio">$20.000</span>
           </div>
           <p>Mate premium, hecho por nuestro equipo.</p>
-         
           <button class="btn-agregar">Agregar al carrito</button>
         </article>
 
@@ -227,7 +225,6 @@
             <span class="precio">$23.999</span>
           </div>
           <p>Madera de algarrobo, clásico y elegante.</p>
-          
           <button class="btn-agregar">Agregar al carrito</button>
         </article>
 
@@ -239,7 +236,6 @@
             <span class="precio">$28.800</span>
           </div>
           <p>Combo con mate y bombilla. Oferta.</p>
-          <!-- 🔹 AGREGADO -->
           <button class="btn-agregar">Agregar al carrito</button>
         </article>
 
@@ -249,8 +245,7 @@
           <div>
             <span class="precio">$63.502</span>
           </div>
-          <p>Contiene material que concentra el calor,grande y unico de nuestra tienda</p>
-          <!-- 🔹 AGREGADO -->
+          <p>Contiene material que concentra el calor, grande y único de nuestra tienda.</p>
           <button class="btn-agregar">Agregar al carrito</button>
         </article>
       </div>
@@ -281,7 +276,6 @@
 
   </main>
 
-  
   <script>
     const botones = document.querySelectorAll('.btn-agregar');
 
