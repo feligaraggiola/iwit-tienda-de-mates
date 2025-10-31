@@ -52,7 +52,6 @@ header a:hover {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 
@@ -97,6 +96,11 @@ header a:hover {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+   transition: all 0.3s ease;
+}
+
+.grupo_input:hover {
+  transform: scale(1.02);
 }
 
 .input.cons {
