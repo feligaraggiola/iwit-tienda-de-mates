@@ -45,12 +45,27 @@ header a:hover {
     width: 80%;
     max-width: 950px;
     margin: 40px auto 60px auto;
-    padding: 100px;
+    padding: 60px;
     background: #0b3d2e;
+    color: white;
     border-radius: 25px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.section_contactos h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contenedor_cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -73,65 +88,86 @@ header a:hover {
     box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
 
-.section_consulta{
-    width: 80%;
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 100px;
-    background: #0b3d2e;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.section_consulta {
+  width: 80%;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 40px;
+  background: #0b3d2e;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: white;
+  margin-bottom: 25px;
 }
 
-.cons{
-    background: #0b3d2e;
-    color: #333;
-    padding: 10px;
-    border-radius: 15px;
-    text-align: center;
-    width: 900px;
-    height: 80px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+.section_consulta h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 
-.cons input{
-    width: 90%;
-    padding: 5px 10px;
-    margin-top: 5px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+.grupo_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+   transition: all 0.3s ease;
 }
 
-.btn{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; 
-    margin-left: 25%;
+.grupo_input:hover {
+  transform: scale(1.02);
+}
+
+.input.cons {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  color: #333;
+}
+
+.input.cons:focus {
+  outline: none;
+  border-color: #1e8c63;
+  box-shadow: 0 0 5px rgba(30, 140, 99, 0.4);
+}
+
+textarea.input.cons {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 30px;
+  background-color: #1e8c63;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
 }
 
 .btn:hover {
-    background-color: #1e8c63;
-    color: white;
-    transform: scale(1.05);
+  background-color: #155f45;
+  transform: scale(1.05);
 }
 
 .footer{
     background-color: #0b3d2e;
     text-align: center;
+    color: white;
     width: 100%;
     height: 100px;
-    margin-top: 50px;
+    margin-top: 50px;    
 }
 img{
     display: flex;
