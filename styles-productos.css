@@ -188,3 +188,34 @@ section {
 #cerrar-modal:hover {
   background-color: #2e7d32;
 }
+/* BOTÓN INSTAGRAM  */
+.btn-instagram {
+  position: fixed;
+  right: 20px;        /* Igual que whatsapp */
+  bottom: 80px;       
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;  /* ovalado */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform .3s, box-shadow .3s;
+  z-index: 9999;
+}
+
+.btn-instagram:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.logo-ig {
+  width: 25px;
+  height: 25px;
+}
+
+

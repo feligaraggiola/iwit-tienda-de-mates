@@ -10,14 +10,16 @@ boton.addEventListener("click", () => {
   modal.classList.remove("oculto");
 });
 
-// Clic derecho -> mensaje oculto
-boton.addEventListener("contextmenu", (e) => {
-  e.preventDefault(); // Evita el menú del clic derecho
-  mensaje.textContent = "Mensaje oculto 🔒";
-  mensaje.style.color = "#d32f2f";
-  modal.classList.remove("oculto");
-});
 
 cerrar.addEventListener("click", () => {
   modal.classList.add("oculto");
 });
+<script>
+  const btnIG = document.getElementById("btn-instagram");
+  const textoIG = document.getElementById("texto-ig");
+
+  btnIG.addEventListener("click", () => {
+    textoIG.textContent = "Sígueme en Instagram";
+  });
+</script>
+
