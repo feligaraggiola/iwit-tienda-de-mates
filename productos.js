@@ -18,7 +18,6 @@ boton.addEventListener("contextmenu", (e) => {
   modal.classList.remove("oculto");
 });
 
-// Cerrar modal
 cerrar.addEventListener("click", () => {
   modal.classList.add("oculto");
 });
