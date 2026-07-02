@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Finalizar Compra | Tech Import ARG</title>
+
+<link rel="stylesheet" href="pago.css">
+
+<link rel="icon" href="img/logo.jpeg">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>TECH IMPORT ARG</h1>
+
+</header>
+
+<div class="contenedor">
+
+    <div class="card">
+
+        <h2>Finalizar Compra</h2>
+
+        <p class="producto">
+            Producto seleccionado:
+        </p>
+
+        <h3 id="nombreProducto">
+            Cargando...
+        </h3>
+
+        <div class="pasos">
+
+            <div>
+                🛒<br>
+                Producto
+            </div>
+
+            ➜
+
+            <div>
+                💳<br>
+                Pago
+            </div>
+
+            ➜
+
+            <div>
+                📱<br>
+                Comprobante
+            </div>
+
+            ➜
+
+            <div>
+                📦<br>
+                Pedido
+            </div>
+
+        </div>
+
+        <p>
+            Alias:
+            <strong>enzo.sottoo</strong>
+        </p>
+
+        <p>
+
+            Titular:
+
+            <strong>Enzo Natanael Soto</strong>
+
+        </p>
+
+        <p class="info">
+
+            Una vez realizado el pago presioná el botón de abajo y envianos el comprobante.
+
+        </p>
+
+        <a
+        id="btnWhatsapp"
+        class="boton"
+        target="_blank">
+
+        Enviar comprobante por WhatsApp
+
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const producto = params.get("producto") || "Producto";
+
+document.getElementById("nombreProducto").innerText = producto;
+
+const mensaje =
+`Hola, ya realicé el pago del ${producto}. Te adjunto el comprobante para confirmar mi compra.`;
+
+document.getElementById("btnWhatsapp").href =
+`https://wa.me/5492995189053?text=${encodeURIComponent(mensaje)}`;
+
+</script>
+
+</body>
+
+</html>

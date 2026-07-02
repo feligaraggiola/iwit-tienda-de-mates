@@ -392,8 +392,6 @@ footer{
     transform:scale(.97);
 }
 
-/* Mantiene todos los botones alineados */
-
 .producto{
     display:flex;
     flex-direction:column;
@@ -402,3 +400,63 @@ footer{
 .producto p{
     flex-grow:1;
 }
+
+/* ========================= */
+/* PROMOCIONES */
+/* ========================= */
+
+.promociones{
+    padding:80px 8%;
+    background:#111;
+    text-align:center;
+}
+
+.promociones h2{
+    font-size:2.5rem;
+    margin-bottom:45px;
+}
+
+.promo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.promo-box{
+    background:#1a1a1a;
+    border-radius:18px;
+    padding:35px 25px;
+    position:relative;
+    transition:.35s;
+    border:2px solid rgba(168,85,247,.3);
+}
+
+.promo-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(168,85,247,.5);
+}
+
+.promo-box h3{
+    margin:20px 0;
+    color:#fff;
+    font-size:24px;
+}
+
+.promo-box p{
+    color:#d8d8d8;
+    line-height:1.6;
+}
+
+.promo-etiqueta{
+    position:absolute;
+    top:-15px;
+    right:20px;
+    background:#b026ff;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    box-shadow:0 0 20px #b026ff;
+}
+
