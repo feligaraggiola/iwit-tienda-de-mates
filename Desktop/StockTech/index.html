@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStock - Gestión de Inventario</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <div>
+                    <h2>TechStock</h2>
+                    <span>Gestión de inventario</span>
+                </div>
+            </div>
+
+            <nav class="menu">
+
+                <button class="menu-item active" onclick="mostrarSeccion('inicio', this)">
+                    🏠
+                    <span>Inicio</span>
+                </button>
+
+                <button class="menu-item" onclick="mostrarSeccion('productos', this)">
+                    📦
+                    <span>Productos</span>
+                </button>
+
+                <button class="menu-item" onclick="mostrarSeccion('stock', this)">
+                    📊
+                    <span>Stock</span>
+                </button>
+
+                <button class="menu-item" onclick="mostrarSeccion('ganancias', this)">
+                    💰
+                    <span>Ganancias</span>
+                </button>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>TechStock v1.0</p>
+                <small>Sistema de inventario</small>
+            </div>
+
+        </aside>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main">
+
+            <!-- HEADER -->
+            <header class="header">
+
+                <div>
+                    <h1 id="tituloPagina">Dashboard</h1>
+                    <p id="subtituloPagina">
+                        Resumen general de tu negocio
+                    </p>
+                </div>
+
+                <div class="usuario">
+                    <div class="avatar">A</div>
+
+                    <div>
+                        <strong>Administrador</strong>
+                        <small>Usuario</small>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- ==================== INICIO ==================== -->
+
+            <section id="inicio" class="seccion activa">
+
+                <!-- TARJETAS -->
+                <div class="cards">
+
+                    <div class="card">
+                        <div class="card-icon blue">📦</div>
+
+                        <div>
+                            <span>Total productos</span>
+                            <h2 id="totalProductos">0</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon green">📊</div>
+
+                        <div>
+                            <span>Stock total</span>
+                            <h2 id="stockTotal">0</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon orange">💰</div>
+
+                        <div>
+                            <span>Valor del inventario</span>
+                            <h2 id="valorInventario">$0</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon purple">📈</div>
+
+                        <div>
+                            <span>Ganancia estimada</span>
+                            <h2 id="gananciaTotal">$0</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCTOS RECIENTES -->
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Productos</h2>
+                            <p>Productos registrados en el sistema</p>
+                        </div>
+
+                        <button class="btn-primary" onclick="abrirModal()">
+                            + Agregar producto
+                        </button>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Categoría</th>
+                                    <th>Stock</th>
+                                    <th>Compra</th>
+                                    <th>Venta</th>
+                                    <th>Ganancia</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tablaProductosInicio">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================== PRODUCTOS ==================== -->
+
+            <section id="productos" class="seccion">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Productos</h2>
+                            <p>Administrá todos tus productos</p>
+                        </div>
+
+                        <button class="btn-primary" onclick="abrirModal()">
+                            + Agregar producto
+                        </button>
+
+                    </div>
+
+
+                    <div class="busqueda">
+
+                        <input
+                            type="text"
+                            id="buscarProducto"
+                            placeholder="🔎 Buscar producto..."
+                            onkeyup="buscarProducto()"
+                        >
+
+                        <select id="filtroCategoria" onchange="buscarProducto()">
+                            <option value="">Todas las categorías</option>
+                            <option value="Audio">Audio</option>
+                            <option value="Cargadores">Cargadores</option>
+                            <option value="Accesorios">Accesorios</option>
+                            <option value="Celulares">Celulares</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Categoría</th>
+                                    <th>Stock</th>
+                                    <th>Compra</th>
+                                    <th>Venta</th>
+                                    <th>Ganancia</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tablaProductos">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================== STOCK ==================== -->
+
+            <section id="stock" class="seccion">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Control de Stock</h2>
+                            <p>Productos con poco stock</p>
+                        </div>
+
+                    </div>
+
+                    <div id="listaStockBajo" class="stock-list">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================== GANANCIAS ==================== -->
+
+            <section id="ganancias" class="seccion">
+
+                <div class="cards">
+
+                    <div class="card">
+                        <div class="card-icon purple">📈</div>
+
+                        <div>
+                            <span>Ganancia estimada</span>
+                            <h2 id="gananciaPagina">$0</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-icon green">💵</div>
+
+                        <div>
+                            <span>Valor de venta</span>
+                            <h2 id="valorVenta">$0</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Ganancias por producto</h2>
+                            <p>Calculá cuánto podrías ganar vendiendo todo tu stock</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Stock</th>
+                                    <th>Compra</th>
+                                    <th>Venta</th>
+                                    <th>Ganancia por unidad</th>
+                                    <th>Ganancia total</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tablaGanancias">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- ==================== MODAL ==================== -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <div>
+                    <h2>Agregar producto</h2>
+                    <p>Ingresá los datos del producto</p>
+                </div>
+
+                <button class="btn-close" onclick="cerrarModal()">×</button>
+
+            </div>
+
+
+            <form id="formProducto">
+
+                <div class="form-group">
+
+                    <label>Nombre del producto</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ej: AirPods Pro 2"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Categoría</label>
+
+                    <select id="categoria" required>
+
+                        <option value="">Seleccionar categoría</option>
+                        <option value="Audio">Audio</option>
+                        <option value="Cargadores">Cargadores</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Celulares">Celulares</option>
+                        <option value="Otros">Otros</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Stock</label>
+
+                        <input
+                            type="number"
+                            id="stock"
+                            min="0"
+                            placeholder="10"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Precio de compra</label>
+
+                        <input
+                            type="number"
+                            id="compra"
+                            min="0"
+                            placeholder="20000"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Precio de venta</label>
+
+                    <input
+                        type="number"
+                        id="venta"
+                        min="0"
+                        placeholder="30000"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        class="btn-secondary"
+                        onclick="cerrarModal()"
+                    >
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn-primary">
+                        Agregar producto
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
