@@ -336,56 +336,5 @@
       <button class="cerrar-modal" id="cerrar-carrito">Cerrar</button>
     </div>
   </div>
-
-  <script>
-    const botones = document.querySelectorAll('.btn-agregar');
-    let contador = 0;
-    const carritoContador = document.getElementById('contador-carrito');
-    const listaCarrito = document.getElementById('lista-carrito');
-    const modal = document.getElementById('modal-carrito');
-    const abrirCarrito = document.getElementById('abrir-carrito');
-    const cerrarCarrito = document.getElementById('cerrar-carrito');
-
-   
-    botones.forEach(boton => {
-      boton.addEventListener('click', () => {
-        const producto = boton.parentElement.dataset.nombre;
-        contador++;
-        carritoContador.textContent = contador;
-
-        const item = document.createElement('li');
-        item.textContent = producto;
-        listaCarrito.appendChild(item);
-
-        boton.textContent = 'Agregado';
-        boton.style.background = '#146b4b';
-        boton.disabled = true;
-
-        setTimeout(() => {
-          boton.textContent = 'Agregar al carrito';
-          boton.style.background = '';
-          boton.disabled = false;
-        }, 1200);
-      });
-    });
-
-    abrirCarrito.addEventListener('click', () => {
-      modal.style.display = 'flex';
-    });
-    cerrarCarrito.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
-
-    
-    const cards = document.querySelectorAll('.card');
-    window.addEventListener('scroll', () => {
-      cards.forEach(card => {
-        const top = card.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-          card.classList.add('visible');
-        }
-      });
-    });
-  </script>
 </body>
 </html>
