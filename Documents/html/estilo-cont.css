@@ -62,11 +62,11 @@ header a:hover {
 }
 
 .contenedor_cards {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 
