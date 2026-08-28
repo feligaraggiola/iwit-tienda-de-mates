@@ -7,15 +7,15 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    background-color: #0b3d2e;
-    padding: 15px 30px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: #0b3d2e;
+  padding: 15px 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
 }
 
 .logo_img {
