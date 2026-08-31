@@ -176,18 +176,17 @@ nav a:hover {
   box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
-    .tarjeta img{
-      width:100%; 
-      height:180px; 
-      object-fit:contain
-    }
+.tarjeta img{
+  width:100%; 
+  height:180px; 
+  object-fit:contain
+}
 
 .precio-original {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Testimonios */
 #testimonios {
   padding: 60px 20px;
   background: #f9f9f9;
