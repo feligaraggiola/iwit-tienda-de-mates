@@ -195,7 +195,7 @@ nav a:hover {
 }
 
 .boton{
-      display:inline-block; 
+  display:inline-block; 
       background:var(--verde); 
       color:white; 
       border:none; 
