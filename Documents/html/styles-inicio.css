@@ -1,9 +1,10 @@
 :root{
-      --verde: #17a673;
-      --gris: #f5f6f7;
-      --texto: #333;
-      --tarjeta: #ffffff;
-    }
+  --verde: #17a673;
+  --gris: #f5f6f7;
+  --texto: #333;
+  --tarjeta: #ffffff;
+}
+
 *{box-sizing: border-box}
   body{font-family: Arial, Helvetica, sans-serif; margin:0; color:var(--texto); background:var(--gris)}
   .contenedor{max-width:1100px;margin:0 auto;padding:20px}
