@@ -58,10 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     mostrarModal("contextmenu");
     });
-  
-    // === Cerrar el modal ===
+
     modalContenido.querySelector("button").addEventListener("click", () => {
-      modal.style.display = "none";
+    modal.style.display = "none";
     });
   
     // === Efecto de resaltado en las tarjetas ===
