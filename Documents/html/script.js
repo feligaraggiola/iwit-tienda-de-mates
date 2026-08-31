@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     botonModal.addEventListener("contextmenu", (e) => {
-      e.preventDefault();
-      mostrarModal("contextmenu");
+    e.preventDefault();
+    mostrarModal("contextmenu");
     });
   
     // === Cerrar el modal ===
