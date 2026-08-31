@@ -51,7 +51,6 @@ header {
 
 /* hace mas llamativa la presentacion*/
 .presentacion h1 {
-
   color: #0b3d2e;
   text-shadow: 0 2px 4px rgba(0,0,0,0,1);
 }
@@ -92,7 +91,6 @@ nav a:hover {
   color: var(--verde);
 }
 
-/* Presentación */
 .presentacion {
   display: flex;
   gap: 20px;
@@ -117,7 +115,6 @@ nav a:hover {
   color: #555;
 }
 
-/* Botón */
 .btn {
   display: inline-block;
   background: var(--verde);
@@ -134,7 +131,6 @@ nav a:hover {
   background: #145c44;
 }
 
-/* Productos */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
