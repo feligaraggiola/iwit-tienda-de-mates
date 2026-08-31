@@ -49,10 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         : "Hiciste clic derecho en el botón 👀";
       };
 
-    // === Eventos del botón ===
     botonModal.addEventListener("click", (e) => {
-      e.preventDefault();
-      mostrarModal("click");
+    e.preventDefault();
+    mostrarModal("click");
     });
   
     botonModal.addEventListener("contextmenu", (e) => {
