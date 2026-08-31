@@ -194,7 +194,7 @@ nav a:hover {
   text-align: center;
 }
 
-    .boton{
+.boton{
       display:inline-block; 
       background:var(--verde); 
       color:white; 
@@ -232,7 +232,6 @@ nav a:hover {
   color: #0b3d2e;
 }
 
-/* Footer */
 footer {
   background: #0b3d2e;
   color: white;
@@ -256,25 +255,21 @@ footer h3 {
   color: var(--verde);
 }
 
-/* 1. Hover en los  botones y las imágenes */
 button:hover, .btn:hover, img:hover {
   transform: scale(1.05);          
   opacity: 0.9;                    
   transition: all 0.3s ease;      
 }
 
-/*animaciones en el codigo*/
 .animar {
   animation: mover 2s infinite alternate;
 }
 
-/*muevo 5 pixeles para animar*/
 @keyframes mover {
   from { transform: translateY(0); }
   to { transform: translateY(-5px); }
 }
 
-/* las cosas aparecen con suavidad */
 .mostrar {
   opacity: 0;
   transform: translateY(20px);
@@ -288,8 +283,6 @@ button:hover, .btn:hover, img:hover {
   }
 }
 
-
-/*   brillo para resaltar objetos */
 .resaltar {
   animation: brillo 3s infinite;
 }
@@ -298,8 +291,6 @@ button:hover, .btn:hover, img:hover {
   0%, 100% { box-shadow: none; }
   40% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); }
 }
-
-
 
 /* Responsive */
 @media (max-width: 700px) {
