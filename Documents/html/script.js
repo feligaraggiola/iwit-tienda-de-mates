@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     <h3>👋 Hola! Este es un mensaje escrito por el Crack del proyecto ;)</h3>
     <button class="btn">Cerrar</button>`;
   
-    modal.appendChild(modalContenido);
-    document.body.appendChild(modal);
+  modal.appendChild(modalContenido);
+  document.body.appendChild(modal);
   
     // === Función para mostrar el modal según clic ===
     function mostrarModal(tipoEvento) {
