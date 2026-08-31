@@ -28,18 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
     zIndex: "1000"
   });
   
-    // === Contenido del modal ===
-    const modalContenido = document.createElement("div");
-    modalContenido.style.background = "white";
-    modalContenido.style.padding = "30px";
-    modalContenido.style.borderRadius = "10px";
-    modalContenido.style.textAlign = "center";
-    modalContenido.style.boxShadow = "0 0 20px rgba(0,0,0,0.3)";
-    modalContenido.innerHTML = `
-      <h3>👋 Hola! Este es un mensaje escrito por el Crack del proyecto ;)</h3>
-      
-      <button class="btn">Cerrar</button>
-    `;
+  const modalContenido = document.createElement("div");
+  modalContenido.style.background = "white";
+  modalContenido.style.padding = "30px";
+  modalContenido.style.borderRadius = "10px";
+  modalContenido.style.textAlign = "center";
+  modalContenido.style.boxShadow = "0 0 20px rgba(0,0,0,0.3)";
+  modalContenido.innerHTML = `
+    <h3>👋 Hola! Este es un mensaje escrito por el Crack del proyecto ;)</h3>
+    <button class="btn">Cerrar</button>`;
   
     modal.appendChild(modalContenido);
     document.body.appendChild(modal);
