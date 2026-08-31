@@ -40,16 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
   
   modal.appendChild(modalContenido);
   document.body.appendChild(modal);
-  
-    // === Función para mostrar el modal según clic ===
-    function mostrarModal(tipoEvento) {
-      modal.style.display = "flex";
-      modalContenido.querySelector("p").textContent =
-        tipoEvento === "click"
-          ? "Hiciste clic izquierdo en el botón 👍"
-          : "Hiciste clic derecho en el botón 👀";
-    }
-  
+
+  function mostrarModal(tipoEvento) {
+    modal.style.display = "flex";
+    modalContenido.querySelector("p").textContent =
+      tipoEvento === "click"
+        ? "Hiciste clic izquierdo en el botón 👍"
+        : "Hiciste clic derecho en el botón 👀";
+      };
+
     // === Eventos del botón ===
     botonModal.addEventListener("click", (e) => {
       e.preventDefault();
