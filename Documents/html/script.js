@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   botonModal.style.fontSize = "18px";
   botonModal.style.padding = "12px 20px";
   
-    // Insertar el botón justo antes de la sección de testimonios
-    const seccionTestimonios = document.getElementById("testimonios");
-    seccionTestimonios.parentNode.insertBefore(botonModal, seccionTestimonios);
+
+  const seccionTestimonios = document.getElementById("testimonios");
+  seccionTestimonios.parentNode.insertBefore(botonModal, seccionTestimonios);
   
     // === Crear el modal (oculto al inicio) ===
     const modal = document.createElement("div");
